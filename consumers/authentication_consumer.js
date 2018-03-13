@@ -1,3 +1,13 @@
-/**
- * Created by ming on 2018/3/13.
- */
+const AuthenticationLog = require('../models/authentication_log');
+
+module.exports = function (obj) {
+    const mLog = new AuthenticationLog();
+    mLog.username = obj.username;
+    mLog.phone = obj.phone;
+
+    mLog.save(function (err) {
+        console.log(err);
+    });
+};
+
+

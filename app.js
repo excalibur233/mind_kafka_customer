@@ -14,9 +14,9 @@ consumer.on('message', function (message) {
     try {
         const obj = JSON.parse(value);
         if (obj.path === "register") {
-
+            require('./consumers/register_consumer')(obj);
         } else if (obj.path === "authentication") {
-
+            require('./consumers/authentication_consumer')(obj);
         }
     } catch (e) {
         console.log(e.message);
