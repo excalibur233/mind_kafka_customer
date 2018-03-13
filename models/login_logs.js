@@ -1,3 +1,10 @@
-/**
- * Created by ming on 2018/3/13.
- */
+const mongoose = require('mongoose');
+
+const LoginLogsSchema = mongoose.Schema({
+    username: {type: String, trim: true, required: true},
+    phone: {type: String, trim: true, required: true},
+
+    created: {type: Date, default: Date.now()},
+});
+
+mongoose.model('login_logs', LoginLogsSchema);
