@@ -9,10 +9,11 @@ const topic = config.kafka_topic;
 module.exports = function () {
     const client = new Client(config.kafka_host);
     const topics = [{topic: topic, partition: 0}];
-    const options = {autoCommit: false, fetchMaxWaitMs: 1000, fetchMaxBytes: 1024 * 1024};
+    const options = {autoCommit: true, fetchMaxWaitMs: 1000, fetchMaxBytes: 1024 * 1024};
 
     const consumer = new Consumer(client, topics, options);
     const offset = new Offset(client);
 
-    return consumer;
+    ret = {consumer: consumer, offset: offset};
+    return ret;
 };
