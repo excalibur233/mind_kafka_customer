@@ -7,4 +7,5 @@ const LoginLogSchema = mongoose.Schema({
     created: {type: Date, default: Date.now()},
 });
 
-mongoose.model('login_log', LoginLogSchema);
+const LoginLog = mongoose.model('LoginLog', LoginLogSchema);
+module.exports = LoginLog;

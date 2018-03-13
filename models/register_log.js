@@ -7,4 +7,5 @@ const RegisterLogSchema = mongoose.Schema({
     created: {type: Date, default: Date.now()},
 });
 
-mongoose.model('register_log', RegisterLogSchema);
+const RegisterLog = mongoose.model('RegisterLog', RegisterLogSchema);
+module.exports = RegisterLog;
