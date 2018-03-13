@@ -1,3 +1,10 @@
-/**
- * Created by ming on 2018/3/13.
- */
+const mongoose = require('mongoose');
+const mongodb = require('../models/mongodb');
+const db = mongodb();
+
+const RegisterLogsSchema = require('../models/register_log');
+const RegisterLog = mongoose.model('RegisterLogsSchema', RegisterLogsSchema);
+
+const mLog = new RegisterLog({username: 'xsm', phone: '15623093771'});
+mLog.save();
+
