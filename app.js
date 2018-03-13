@@ -10,6 +10,17 @@ const offset = kafka().offset;
 consumer.on('message', function (message) {
     const value = message.value;
     console.log('kafka consumer: ' + value);
+
+    try {
+        const obj = JSON.parse(value);
+        if (obj.path === "register") {
+
+        } else if (obj.path === "authentication") {
+
+        }
+    } catch (e) {
+        console.log(e.message);
+    }
 });
 
 consumer.on('error', function (err) {
