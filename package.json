@@ -1,0 +1,28 @@
+{
+  "name": "mind_kafka_customer",
+  "version": "1.0.0",
+  "description": "mind web kafka customer\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[: kafka customer for mind web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/excalibur233/mind_kafka_customer.git"
+  },
+  "keywords": [
+    "kafka",
+    "mongodb"
+  ],
+  "author": "xuming.js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/excalibur233/mind_kafka_customer/issues"
+  },
+  "homepage": "https://github.com/excalibur233/mind_kafka_customer#readme",
+  "dependencies": {
+    "kafka-node": "^2.4.1",
+    "mongodb": "^3.0.4",
+    "mongoose": "^5.0.10"
+  }
+}
