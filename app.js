@@ -26,7 +26,7 @@ consumer.on('offsetOutOfRange', function (topic) {
         if (err) {
             return console.error(err);
         }
-        var min = Math.min.apply(null, offsets[topic.topic][topic.partition]);
+        let min = Math.min.apply(null, offsets[topic.topic][topic.partition]);
         consumer.setOffset(topic.topic, topic.partition, min);
     });
 });
